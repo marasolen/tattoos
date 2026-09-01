@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html style="height: 100vh;">
+    <head>
+        <title>Tattour</title>
+        <meta charset="UTF-8">
+        <link rel="icon" href="images/favicon-32x32.png">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+    </head>
+    <body style="margin: 0; min-height: 100vh;">
+        <div class="column">
+            <h1 style="text-align: center; margin-bottom: 0; font-weight: 500;">Tattour</h1>
+            <div style="text-align: center;">
+                <p style="padding: 0; margin-top: 0;">August 31, 2026</p>
+                <p style="padding-top: 0; margin-top: 0;">Mara Solen</p>
+            </div>
+            <p>
+                I got my 30th tattoo this month! It's a heron, and it's on the right side of my chest. I didn't actually realize I had 30,
+                I just thought that I had a lot and I wanted to explain them to people more. It was only when I started making this 
+                visualization that I realized there are 30. 
+            </p>
+            <p>
+                The thing I always have to explain is the layout of my tattoos. I, like many others that I know, have a patchword tattoo
+                style, meaning that I have lots of individual tattoos. A lot of them are from different artists and are in somewhat
+                different styles. The thing that brings them all together is the layout. I decided at the start that I wanted my tattoos 
+                to make my body look like a sketched/cartoon world full of animals and plants. My body is split into different sections,
+                with each section representing a biome. The point just below my elbow level is where creatures that live on the surface of
+                the water live. Below that, everything is underwater, and I plan to add some that are underground on my feet and ankles. 
+                Just above that, near the elbow, is the land biome. From about halfway between my elbow and my shoulder upwards is the
+                sky, which only contains creatures that are very tall or are flying.
+            </p>
+            <div class="row">
+                <div><img src="images/thinkingbird.jpg" style="border-radius: 1em;"><p>My first tattoo</p></div>
+                <div><img src="images/reindeer.jpg" style="border-radius: 1em;"><p>My biggest tattoo</p></div>
+                <div><img src="images/heron.jpg" style="border-radius: 1em;"><p>My most recent tattoo</p></div>
+            </div>
+            <p>
+                This visualization shows approximately where each tattoo is on my body, and how that relates to the biome it is in. It also
+                has pictures of all of my tattoos ringed around the visualization in the order that I got them, and you can see what year 
+                I got each tattoo in based on the colour of the circle as well. You can see that I started with lots of animals on my left
+                arm (the visualization is me facing outwards, so it is mirrored) as well as my reindeer chest tattoo. Then, I did most of
+                my right arm, then went further outwards with my right leg and the right side of my chest.
+            </p>
+        </div>
+
+        <div id="visualization-container" class="visualization-container" first-render="true">
+            <svg id="visualization" class="visualization"></svg>
+        </div>
+        
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js "></script>
+        <script src="https://d3js.org/d3.v7.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/dayOfYear.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html>
